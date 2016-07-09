@@ -1,0 +1,14 @@
+<ion-view view-title="Dashboard">
+  <ion-content>
+    <div class="card padding">
+    	Veja o que você comeu
+    </div>
+    <ion-list>
+      <ion-item ng-repeat="item in database" ng-class="{pouco: item.id_como == 100, normal: item.id_como == 101, maisnormal: item.id_como == 102, muito: item.id_como == 103}">
+        <h2>{{item.comeu}}</h2>
+        <p>{{item.como}}</p>
+        <span class="badge badge-positive">{{fromNow(item.data_formatada)}}</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,9 @@
+.item.muito {
+	border-left: 5px solid #ff4c4c;
+}
+.item.pouco, .item.maisnormal {
+	border-left: 5px solid #ded50b;
+}
+.item.normal {
+	border-left: 5px solid #28a54c;
+}

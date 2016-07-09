@@ -1,0 +1,10 @@
+<ion-view view-title="Comeu o que?">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="comeu in comidas" ng-click="openModal(comeu)">
+        <h2>{{comeu.titulo}}</h2>
+        <p>{{comeu.descricao}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
